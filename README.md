@@ -84,7 +84,7 @@ Test horizontal and vertical left stick values, read from the '/carla/ego_vehicl
         $ source ~/CARLA_0.9.8/ros-bridge/devel/setup.bash
         $ python joypubsub.py 
  
- 3. Output similar to:
+ 3. Move your left joystick & check output:
  
          ---
          linear: 
