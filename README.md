@@ -50,9 +50,9 @@ For custom rosbridge Carla setup visit :
      
   output similar to: 
      
-     [ INFO] 1253226189.805503000: Started node [/joy], pid [4672], bound on [aqy], xmlrpc port [33367], tcpros port              [58776],      logging to [/u/mwise/ros/ros/log/joy_4672.log], using [real] time
-     [ INFO] 1253226189.812270000: Joystick device:              
-     /dev/input/js0 [ INFO] 1253226189.812370000: Joystick deadzone: 2000
+       [ INFO] 1253226189.805503000: Started node [/joy], pid [4672], bound on [aqy], xmlrpc port [33367], tcpros port              [58776],      logging to [/u/mwise/ros/ros/log/joy_4672.log], using [real] time
+       [ INFO] 1253226189.812270000: Joystick device:              
+      /dev/input/js0 [ INFO] 1253226189.812370000: Joystick deadzone: 2000
  
 ### On a new terminal:
     $ rostopic echo joy
