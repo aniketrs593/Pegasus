@@ -1,0 +1,19 @@
+TERMINAL 1 (Start the simulator):
+cd CARLA_0.9.8 
+./CarlaUE4.sh
+
+TERMINAL 2 (Start the ros-bridge):
+source ~/CARLA_0.9.8/ros-bridge/devel/setup.bash
+roslaunch carla_ros_bridge carla_ros_bridge_with_rviz.launch
+
+TERMINAL 3 (Change map with custom presets & Start the ego vehicle):
+cd ~/CARLA_0.9.8/PythonAPI/util
+./config.py -m Town04 --weather ClearNoon
+
+source ~/CARLA_0.9.8/ros-bridge/devel/setup.bash
+roslaunch carla_ego_vehicle carla_example_ego_vehicle.launch
+
+TERMINAL 4 (manually override Vehicle Control Commands)
+rostopic pub carla/ego_vehicle/vehicle_control_manual_override std_msgs/Bool “data: True”
+
+Note: Step 3 not required for reading Odometry topic
