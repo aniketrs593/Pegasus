@@ -16,13 +16,15 @@ For custom rosbridge Carla setup visit :
  ### Installing
      sudo apt-get install ros-melodic-joy
    
- ### check connection
+ ### Check connection
      $ ls /dev/input/js0
+     
      output:
      /dev/input/js0
    
- ### check if all buttons are working
+ ### Check if all buttons are working
      $ sudo jstest /dev/input/js0
+     
      output similar to:
      Driver version is 2.1.0.
      Joystick (Logitech Logitech Cordless RumblePad 2) has 6 axes (X, Y, Z, Rz, Hat0X, Hat0Y)
@@ -32,6 +34,7 @@ For custom rosbridge Carla setup visit :
     
  ### Making joystick available to ROS joy node
      $ ls -l /dev/input/js0
+     
      Output:
      crw-rw-XX- 1 root dialout 188, 0 2009-08-14 12:04 /dev/input/jsX
      
@@ -69,7 +72,31 @@ For custom rosbridge Carla setup visit :
     axes: (0.0, 0.0, -0.36082032322883606, 0.34022033214569092)
     buttons: (0, 0, 0, 0, 0)
     
-## 2.2  
+## 2.2 Testing manual control:
+
+### Initial test for twist commands
+Test horizontal and vertical left stick values, read from the '/carla/ego_vehicle/odometry' topic. 
+ 
+ 1. Complete the startup instructions 
+ 
+ 2. In a new terminal window:
+        
+        $ source ~/CARLA_0.9.8/ros-bridge/devel/setup.bash
+        $ python joypubsub.py 
+ 
+ 3. Output similar to:
+ 
+         ---
+         linear: 
+         x: 4.0
+         y: 0.0
+         z: 0.0
+         angular: 
+         x: 0.0
+         y: 0.0
+         z: -0.333409905434
+         ---
+
   
 
 
