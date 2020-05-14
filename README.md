@@ -13,35 +13,31 @@ Custom rosbridge for Carla setup visit :
 
 ## Controller setup:
    
-    #Installing
-    sudo apt-get install ros-melodic-joy
+  ## Installing
+     sudo apt-get install ros-melodic-joy
    
-    #check connection
-    $ ls /dev/input/js0
-    
-    output:
-    /dev/input/js0
+  ## check connection
+     $ ls /dev/input/js0
+     output:
+     /dev/input/js0
    
-    #check if all buttons are working
-    $ sudo jstest /dev/input/js0
+  ## check if all buttons are working
+     $ sudo jstest /dev/input/js0
+     output:
+     Driver version is 2.1.0.
+     Joystick (Logitech Logitech Cordless RumblePad 2) has 6 axes (X, Y, Z, Rz, Hat0X, Hat0Y)
+     and 12 buttons (BtnX, BtnY, BtnZ, BtnTL, BtnTR, BtnTL2, BtnTR2, BtnSelect, BtnStart, BtnMode, BtnThumbL, BtnThumbR).
+     Testing ... (interrupt to exit)
+     Axes:  0:     0  1:     0  2:     0  3:     0  4:     0  5:     0 Buttons:  0:off  1:off  2:off  3:off  4:off  5:off          6:off  7:off  8:off  9:off 10:off 11:off
     
-    output:
-    Driver version is 2.1.0.
-    Joystick (Logitech Logitech Cordless RumblePad 2) has 6 axes (X, Y, Z, Rz, Hat0X, Hat0Y)
-    and 12 buttons (BtnX, BtnY, BtnZ, BtnTL, BtnTR, BtnTL2, BtnTR2, BtnSelect, BtnStart, BtnMode, BtnThumbL, BtnThumbR).
-    Testing ... (interrupt to exit)
-    Axes:  0:     0  1:     0  2:     0  3:     0  4:     0  5:     0 Buttons:  0:off  1:off  2:off  3:off  4:off  5:off         6:off  7:off  8:off  9:off 10:off 11:off
+  ## To make joystick available to ROS joy node
+     $ ls -l /dev/input/js0
+     Output:
+     crw-rw-XX- 1 root dialout 188, 0 2009-08-14 12:04 /dev/input/jsX
     
-    #To make joystick available to ROS joy node
-    $ ls -l /dev/input/js0
-    
-    Output:
-    crw-rw-XX- 1 root dialout 188, 0 2009-08-14 12:04 /dev/input/jsX
-    
-    If XX is rw: the js device is configured properly.
-    If XX is --: the js device is not configured properly and you need to:
-    
-    $ sudo chmod a+rw /dev/input/jsX
+  ## If XX is rw: the js device is configured properly.
+  ## If XX is --: the js device is not configured properly and you need to:
+     $ sudo chmod a+rw /dev/input/jsX
   
  ## Starting joy node:
      $ roscore
