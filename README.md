@@ -84,6 +84,7 @@ Test horizontal and vertical left stick values, read from the '/carla/ego_vehicl
  
  2. In a new terminal window:
         
+        $ cd carla_manual_control/ 
         $ source ~/CARLA_0.9.8/ros-bridge/devel/setup.bash
         $ python joypubsub.py 
  
