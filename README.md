@@ -42,6 +42,10 @@ Custom rosbridge for Carla setup visit :
     If XX is --: the js device is not configured properly and you need to:
     
     $ sudo chmod a+rw /dev/input/jsX
+  
+ ## Starting joy node:
+     $ roscore
+     $ rosrun joy joy_node
       
 
   
