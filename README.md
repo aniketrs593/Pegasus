@@ -9,7 +9,7 @@ WMUxCSU-IAC
 For custom rosbridge Carla setup visit : 
 <https://github.com/nickgoberville/carla-ros-bridge>
 
-# 2. Manual Control for Carla using xbox controller
+# 2. Carla manual control using xbox controller
 
 ## 2.1 Controller setup:
    
