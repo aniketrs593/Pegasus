@@ -11,7 +11,7 @@ xterm  -e  " source ~/CARLA_0.9.8/ros-bridge/devel/setup.bash; roslaunch carla_r
 sleep 3
 
 xterm  -e  "cd ~/CARLA_0.9.8/PythonAPI/util/; ./config.py -m Town04 --weather ClearNoon" & 
-sleep 1
+sleep 3
 
 xterm  -e  " source ~/CARLA_0.9.8/ros-bridge/devel/setup.bash; roslaunch carla_ego_vehicle carla_example_ego_vehicle.launch" &
 sleep 3
