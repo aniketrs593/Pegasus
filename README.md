@@ -27,7 +27,7 @@ $ git clone https://github.com/aniketrs593/Pegasus.git
 $ cd carla_manual_control 
 $ chmod +x joypubsub.py
 
-# Launch joystick shell script
+# Launch joystick bash file
 $ ./joystick.sh
 ```
 ## Troubleshoot 
