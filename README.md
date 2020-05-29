@@ -31,7 +31,7 @@ $ chmod +x joypubsub.py
 $ ./joystick.sh
 ```
 ## Troubleshoot 
-if `$ xterm command is not found`, run `$ sudo apt-get install -y xterm` in another terminal adn re run the Carla and joyStick shell script again
+if `$ xterm command is not found`, run `$ sudo apt-get install -y xterm` in another terminal and re-run joyStick shell script.
 
 
 
