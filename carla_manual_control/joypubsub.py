@@ -20,8 +20,8 @@ def callback(data):
 def main():
     
     global pub
-    pub = rospy.Publisher('/carla/ego_vehicle/odometry', Twist, queue_size=10)
-    #pub = rospy.Publisher('/carla/ego_vehicle/twist_cmd', Twist, queue_size=10)
+    #pub = rospy.Publisher('/carla/ego_vehicle/odometry', Twist, queue_size=10)
+    pub = rospy.Publisher('/carla/ego_vehicle/twist_cmd', Twist, queue_size=10)
     
 
     rospy.Subscriber('/joy', Joy, callback)
