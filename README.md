@@ -17,25 +17,16 @@ For custom rosbridge Carla setup visit:
 To setup controller visit: 
 <http://wiki.ros.org/joy/Tutorials/WritingTeleopNode>
 
-## 3. Clone Repository and edit code
+## 3. Clone Repository and run bash
 ```
 # clone the repository
 $ cd CARLA_0.9.8/ 
 $ git clone https://github.com/aniketrs593/Pegasus.git
 
 # make joypubsub file executable
+$ cd carla_manual_control 
 $ chmod +x joypubsub.py
 
-#Open joystick.sh shell script in your favorite editor (mine is visual studio code)
-$ code joyStick.sh
-
-# Edit the USER_NAME to your own pc name (find the path directory to confirm the name)
-xterm  -e  "cd /home/USER_NAME/CARLA_0.9.8/PythonAPI/util/; ./config.py -m Town04 --weather ClearNoon" & 
-
-# Launch Carla shell script
-$ ./CarlaEU4.sh
-
-***New Terminal***
 # Launch joystick shell script
 $ ./joystick.sh
 ```
