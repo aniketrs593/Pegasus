@@ -19,6 +19,7 @@ To setup controller visit:
 
 ## 3. Clone Repository and run bash
 ```
+# Connect you controller
 # clone the repository
 $ cd CARLA_0.9.8/ 
 $ git clone https://github.com/aniketrs593/Pegasus.git
