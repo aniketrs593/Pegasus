@@ -28,12 +28,13 @@ $ git clone https://github.com/aniketrs593/Pegasus.git
 # make joypubsub file executable
 $ cd carla_manual_control 
 $ chmod +x joypubsub.py
+$ chmod +x joystick.sh
 
 # Launch joystick bash file
 $ ./joystick.sh
 ```
 ## Troubleshoot 
-if `$ xterm command is not found`, run `$ sudo apt-get install -y xterm` in another terminal and re-run joyStick shell script.
+if `$ xterm command is not found`, run `$ sudo apt-get install -y xterm` in another terminal and re-run joyStick bash file.
 
 
 
