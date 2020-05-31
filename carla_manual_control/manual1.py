@@ -18,7 +18,7 @@ class Ani:
         self.client.set_timeout(2.0)
         
         self.max_speed = 27
-        self.max_steering_angle = 75
+        self.max_steering_angle = 1.5
 
         self.speed = 0
         self.steering_angle = 0
