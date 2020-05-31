@@ -46,10 +46,7 @@ def main():
         
         msg.throttle = cmd_msg.speed
         msg.steer =  cmd_msg.steering_angle
-        #msg.brake = control.brake
-        #msg.hand_brake = control.hand_brake
-        #msg.reverse = control.reverse
-	ack.pub_callback(msg)
+        ack.pub_callback(msg)
         rate.sleep()
         
 if __name__ == '__main__':
