@@ -22,7 +22,7 @@ To setup controller visit:
 # Connect you controller
 
 # clone the repository
-$ cd CARLA_0.9.8/ 
+$ cd CARLA_0.9.8/ros-bridge/src
 $ git clone https://github.com/aniketrs593/Pegasus.git
 
 # make joypubsub file executable
