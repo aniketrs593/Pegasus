@@ -19,5 +19,8 @@ sleep 3
 xterm  -e  "rosrun joy joy_node " &
 sleep 3
 
-xterm  -e  " source ~/CARLA_0.9.8/ros-bridge/devel/setup.bash; python joypubsub.py" &
+#xterm  -e  " source ~/CARLA_0.9.8/ros-bridge/devel/setup.bash; python joypubsub.py" &
+#sleep 3
+
+xterm  -e  " source ~/CARLA_0.9.8/ros-bridge/devel/setup.bash; python manual1.py" &
 sleep 3
