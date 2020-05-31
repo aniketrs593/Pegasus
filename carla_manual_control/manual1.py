@@ -25,18 +25,15 @@ class Ani:
         self.joy_sub = rospy.Subscriber('/joy', Joy, self.joy_callback)
         self.egopub = rospy.Publisher('/carla/ego_vehicle/vehicle_control_cmd', CarlaEgoVehicleControl,
                                          queue_size=1)
-
-                                        
+                                   
     def joy_callback(self, joy_msg):
         self.speed = joy_msg.axes[0] * self.max_speed
         self.steering_angle = joy_msg.axes[3] * self.max_steering_angle
-
 
     def pub_callback(self, msg):
         
         self.egopub.publish(msg)
         
-
 def main():
     ack = Ani()
     rospy.init_node('Carla_control')
