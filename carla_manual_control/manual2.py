@@ -29,8 +29,8 @@ class Ani:
                                       queue_size=1)
 
     def joy_callback(self, joy_msg):
-        self.speed = joy_msg.axes[0] * self.max_speed
-        self.steering_angle = joy_msg.axes[3] * self.max_steering_angle
+        self.speed = joy_msg.axes[1] * self.max_speed
+        self.steering_angle = -1 * joy_msg.axes[3] * self.max_steering_angle
         self.brake = joy_msg.axes[5] 
 
     def pub_callback(self, msg):
