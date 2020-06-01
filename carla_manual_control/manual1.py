@@ -18,7 +18,7 @@ class Ani:
         self.client.set_timeout(2.0)
         
         self.max_speed = 27
-        self.max_steering_angle = 150
+        self.max_steering_angle = 1
 
         self.speed = 0
         self.steering_angle = 0
@@ -28,7 +28,7 @@ class Ani:
                                    
     def joy_callback(self, joy_msg):
         self.speed = joy_msg.axes[0] * self.max_speed
-        self.steering_angle = joy_msg.axes[3] / self.max_steering_angle
+        self.steering_angle = joy_msg.axes[3] * self.max_steering_angle
 
     def pub_callback(self, msg):
         
