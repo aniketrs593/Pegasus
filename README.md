@@ -1,5 +1,5 @@
 # Pegasus
 WMUxCSU-IAC 
 
-##NOTE
+## NOTE
 This branch is used to test out new code. 
