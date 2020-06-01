@@ -22,5 +22,5 @@ sleep 3
 #xterm  -e  " source ~/CARLA_0.9.8/ros-bridge/devel/setup.bash; python joypubsub.py" &
 #sleep 3
 
-xterm  -e  " source ~/CARLA_0.9.8/ros-bridge/devel/setup.bash; python manual1.py" &
+xterm  -e  " source ~/CARLA_0.9.8/ros-bridge/devel/setup.bash; python manual2.py" &
 sleep 3
