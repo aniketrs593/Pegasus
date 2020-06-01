@@ -57,7 +57,6 @@ def main():
         if ack.brake == -1:
             msg.brake = True
         
-        
         ack.pub_callback(msg)
         rate.sleep()
 
