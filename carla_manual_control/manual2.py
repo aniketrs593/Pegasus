@@ -45,25 +45,21 @@ def main():
     while not rospy.is_shutdown():
         cmd_msg = AckermannDrive()
         msg = CarlaEgoVehicleControl()
-
-        while(ack.brake == 1):
-            cmd_msg.speed = ack.speed
-            cmd_msg.steering_angle = ack.steering_angle
-            msg.steer = cmd_msg.steering_angle
-            if cmd_msg.speed > 0:
-                msg.throttle = cmd_msg.speed
+        cmd_msg.speed = ack.speed
+        cmd_msg.steering_angle = ack.steering_angle
+        msg.steer = cmd_msg.steering_angle
+        msg.throttle = cmd_msg.speed
         
-            elif cmd_msg.speed < 0:
-                msg.reverse = 27
+        if ack.brake == 1:          
+            if cmd_msg.speed < 0:
+                msg.reverse = 15
         
-        while(ack.brake == -1):
-            cmd_msg.speed = ack.speed
-            cmd_msg.steering_angle = ack.steering_angle
-            msg.steer = cmd_msg.steering_angle
+        if ack.brake == -1:
             msg.brake = True
+               
+        ack.pub_callback(msg)
+        rate.sleep()
         
-    ack.pub_callback(msg)
-    rate.sleep()
 
 if __name__ == '__main__':
     main()
