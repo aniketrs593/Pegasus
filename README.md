@@ -29,6 +29,7 @@ $ git clone https://github.com/aniketrs593/Pegasus.git
 $ cd carla_manual_control 
 $ chmod +x joypubsub.py
 $ chmod +x joystick.sh
+$ pip install --user simple-pid
 
 # Launch joystick bash file
 $ ./joystick.sh
