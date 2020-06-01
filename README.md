@@ -37,7 +37,25 @@ $ ./joystick.sh
 ## Troubleshoot 
 if `$ xterm command is not found`, run `$ sudo apt-get install -y xterm` in another terminal and re-run joyStick bash file.
 
+## Joycon Controls
+ ```
+ Throttle: 
+ Left analog stick.
+ Direction: <-
 
+ Reverse:
+ Left analog stick
+ Direction: ->
+ 
+ Steer:
+ Right analog stick
+ 
+ Brake:
+ Right trigger (RT)
+ 
+ ```
+ 
+ 
 
   
 
