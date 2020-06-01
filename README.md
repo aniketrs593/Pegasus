@@ -39,13 +39,8 @@ if `$ xterm command is not found`, run `$ sudo apt-get install -y xterm` in anot
 
 ## Joycon Controls
  ```
- Throttle: 
+ Throttle & Reverse: 
  Left analog stick.
- Direction: <-
-
- Reverse:
- Left analog stick
- Direction: ->
  
  Steer:
  Right analog stick
