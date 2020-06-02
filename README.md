@@ -8,6 +8,8 @@ The purpose of this repository is to control the ego vehicle with a joystick con
 
 ** **ANOTHER NOTE: Controlling the car right now with the joystick is unrealistic and we are working on adding more parameters and restrictions to drive the car more realistic** **
 
+** **UPDATE: ego vehicle now has acceleration, reverse, and brake, for specific buttons see JoyCon Control Section
+
 ## 1. Carla_0.9.8 setup
 
 For custom rosbridge Carla setup visit: 
